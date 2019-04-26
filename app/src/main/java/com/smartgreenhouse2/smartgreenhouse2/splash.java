@@ -17,7 +17,7 @@ public class splash extends Activity {
             music.start();
 
         new Handler().postDelayed(new Runnable() { @Override public void run()
-        { final Intent mainIntent = new Intent(getApplicationContext(), login.class);
+        { final Intent mainIntent = new Intent(splash.this, login.class);
         splash.this.startActivity(mainIntent);
         splash.this.finish(); } },
                 4000);
